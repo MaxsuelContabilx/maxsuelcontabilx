@@ -1,8 +1,9 @@
-# Olá, bem-vindo(a) ao meu perfil! 👋
+# Olá, bem-vindo (a) ao meu perfil! 👋
 
-Meu nome é **[Seu Nome Completo]** e sou Contador especializado em [Sua Especialidade, ex: Planejamento Tributário / Contabilidade Digital / Finanças Empresariais]. 
+Maxsuel Ribeiro | Contador & Analista de Dados Fiscais
+Transformando dados contábeis em decisões estratégicas e eficiência tributária na agroindústria.
 
-Utilizo este espaço para centralizar meus principais trabalhos, análises financeiras, artigos e canais de contato. O objetivo é unir a precisão da contabilidade com a transparência e a inovação tecnológica.
+Atualmente, exerço o cargo de Assistente Contábil e Fiscal na Usina Caeté, lidando com a complexidade do Lucro Real e grandes operações fiscais. Especialista tributário (em formação), unindo Contabilidade Digital e Business Intelligence.
 
 ---
 
@@ -10,10 +11,10 @@ Utilizo este espaço para centralizar meus principais trabalhos, análises finan
 
 Aqui você me encontra mais ativo:
 
-*   💼 **LinkedIn:** [Acesse meu perfil profissional]([LINK_DO_SEU_LINKEDIN](https://www.linkedin.com/in/maxsuel-ribeiro-b859b8221))
-*   📸 **Instagram:** [[@seu_usuario](https://www.instagram.com/contabilidadex?igsh=c3BnNjNmZTE2dm91)]([LINK_DO_SEU_INSTAGRAM])
-*   📧 **E-mail Profissional:** [Contabilidademaxsuel@gmail.com](mailto:seu.email@exemplo.com)
-*   💬 **WhatsApp:** [Fale direto comigo]([LINK_DO_SEU_WHATSAPP](https://wa.me/qr/ZBWL5X7A25MQI1))
+*   💼 **LinkedIn:** [Acesse meu perfil profissional](https://www.linkedin.com/in/maxsuel-ribeiro-b859b8221)
+*   📸 **Instagram:** [@contabilidadex](https://www.instagram.com/contabilidadex?igsh=c3BnNjNmZTE2dm91)
+*   📧 **E-mail Profissional:** [Contabilidademaxsuel@gmail.com](mailto:Contabilidademaxsuel@gmail.com)
+*   💬 **WhatsApp:** [Fale direto comigo](https://wa.me/qr/ZBWL5X7A25MQI1)
 
 ---
 
@@ -22,19 +23,20 @@ Aqui você me encontra mais ativo:
 Abaixo estão os links para alguns dos meus principais projetos, planilhas inteligentes, artigos e análises:
 
 ### 📁 Ferramentas & Planilhas
-*   🧮 **[Nome da Planilha/Ferramenta]:** [Breve descrição, ex: Simulador de Enquadramento Tributário para MEIs e Microempresas.] -> [Acessar Planilha](LINK_DA_PLANILHA)
-*   📈 **[Nome do Dashboard]:** [Breve descrição, ex: Dashboard no Power BI para Análise de Fluxo de Caixa.] -> [Visualizar Dashboard](LINK_DO_DASHBOARD)
-
-### ✍️ Artigos e Publicações
-*   📰 **[Título do Artigo 1]:** [Breve resumo, ex: Como a Reforma Tributária afeta o setor de serviços em 2026.] -> [Ler Artigo](LINK_DO_ARTIGO)
-*   📝 **[Título do Artigo 2]:** [Breve resumo, ex: Guia prático de Elisão Fiscal para Startups.] -> [Ler Artigo](LINK_DO_ARTIGO)
+*   🧮 **[Nome da Planilha]:** [Breve descrição da planilha ou ferramenta de automação] -> [Acessar Planilha](LINK_DA_PLANILHA)
+*   📈 **[Nome do Dashboard]:** [Breve descrição do seu relatório] -> [Visualizar Dashboard](LINK_DO_DASHBOARD)
 
 ---
 
 ## 🛠️ Especialidades & Ferramentas
 
-*   **Áreas de Atuação:** Contabilidade Consultiva, Gestão Financeira, Auditoria, BPO Financeiro.
-*   **Softwares & Ferramentas:** Excel Avançado, Power BI, [Sistema Contábil que usa, ex: Alterdata/Domínio], Notion.
+*   **Áreas de Atuação:** Contabilidade Consultiva, Gestão Financeira, Planejamento Tributário, BPO Financeiro.
+*   **Softwares & Ferramentas:** Excel Avançado, Power BI, Sistemas Contábeis, Notion.
+
+### 🛠️ Competências de Grande Porte:
+* **Regimes Tributários:** Lucro Real (Não Cumulativo - PIS/COFINS).
+* **Setor de Atuação:** Agroindústria / Setor Sucroenergético / Indústria de Grande Porte.
+* **Tech Stack Contábil:** Excel Avançado (Power Query), Power BI (Dashboards Fiscais), ERPs de Grande Porte.
 
 ---
 
