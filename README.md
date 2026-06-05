@@ -11,7 +11,7 @@ Utilizo este espaço para centralizar meus principais trabalhos, análises finan
 Aqui você me encontra mais ativo:
 
 *   💼 **LinkedIn:** [Acesse meu perfil profissional]([LINK_DO_SEU_LINKEDIN](https://www.linkedin.com/in/maxsuel-ribeiro-b859b8221))
-*   📸 **Instagram:** [@seu_usuario]([LINK_DO_SEU_INSTAGRAM](https://www.instagram.com/contabilidadex?igsh=c3BnNjNmZTE2dm91))
+*   📸 **Instagram:** [[@seu_usuario](https://www.instagram.com/contabilidadex?igsh=c3BnNjNmZTE2dm91)]([LINK_DO_SEU_INSTAGRAM])
 *   📧 **E-mail Profissional:** [Contabilidademaxsuel@gmail.com](mailto:seu.email@exemplo.com)
 *   💬 **WhatsApp:** [Fale direto comigo]([LINK_DO_SEU_WHATSAPP](https://wa.me/qr/ZBWL5X7A25MQI1))
 
