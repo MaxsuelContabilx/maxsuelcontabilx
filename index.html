@@ -35,71 +35,65 @@
             padding: 2rem 1rem;
         }
 
-        /* RECONSTRUÇÃO IDÊNTICA DA LOGO (M + 3 BARRINHAS + CIFRÃO NO MEIO) */
+        /* CONSTRUÇÃO DA LOGO FIEL (M BI-COLOR + 3 BARRINHAS + CIFRÃO NO MEIO) */
         .brand-logo-container {
             display: inline-flex;
-            align-items: flex-end; /* Alinha a base de todas as barras */
+            align-items: flex-end; /* Alinha perfeitamente a base do M com as barras */
             justify-content: center;
-            height: 95px;          
+            gap: 4px;              /* Espaçamento perfeito entre o M e o gráfico */
             margin-bottom: 1rem;
             position: relative;
         }
 
-        /* Metade esquerda do M (Em branco para destacar no fundo escuro) */
-        .logo-m-left {
+        /* O ÚNICO M: Dividido milimetricamente ao meio em duas cores */
+        .logo-m {
             font-family: "Arial Black", "Impact", sans-serif;
-            font-size: 5.8rem;
-            color: #ffffff;
-            line-height: 0.78;
-            letter-spacing: -3px;
+            font-size: 5.5rem;
+            line-height: 0.76;
+            letter-spacing: normal;
+            background: linear-gradient(to right, #ffffff 50%, var(--text-gold) 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
         }
 
-        /* Perna direita do M (A barra dourada alta que conecta no M) */
-        .logo-m-right-bar {
-            width: 16px;
-            height: 72px;
-            background-color: var(--text-gold);
-            margin-left: -3px; /* Encaixa no M */
-            margin-right: 5px; /* Espaço antes das barrinhas do gráfico */
-        }
-
-        /* Bloco das 3 barrinhas restantes do gráfico */
+        /* Bloco contendo as 3 barrinhas do gráfico */
         .logo-graph-bars {
             display: inline-flex;
             align-items: flex-end;
-            gap: 5px;             /* Espaçamento entre as 3 barras */
-            height: 72px;         
+            gap: 5px;             /* Espaço entre as 3 colunas */
+            height: 62px;         /* Proporcional à altura do M */
             position: relative;
         }
 
-        /* As 3 barras douradas que sobem degrau por degrau */
+        /* As 3 barras douradas que sobem em degrau */
         .bar-1 {
-            width: 13px;
-            height: 35%;          /* Barra menor */
+            width: 12px;
+            height: 35%;          /* Primeira barra (menor) */
             background-color: var(--text-gold);
         }
 
         .bar-2 {
-            width: 13px;
-            height: 55%;          /* Barra média */
+            width: 12px;
+            height: 55%;          /* Segunda barra (média) */
             background-color: var(--text-gold);
         }
 
         .bar-3 {
-            width: 13px;
-            height: 75%;          /* Barra mais alta da direita */
+            width: 12px;
+            height: 80%;          /* Terceira barra (maior) */
             background-color: var(--text-gold);
         }
 
-        /* O Cifrão posicionado exatamente onde está na logo original: no meio/topo das barras */
+        /* O Cifrão posicionado exatamente no meio, flutuando sobre as barras */
         .logo-sifrao {
             position: absolute;
-            font-size: 2.8rem;
-            color: #ffffff;       /* Branco para dar leitura */
+            font-size: 2.3rem;
+            color: #ffffff;       /* Branco para contraste no tema escuro */
             font-family: "Segoe UI", -apple-system, sans-serif;
             font-weight: bold;
-            top: -12px;           /* Flutua acima das primeiras barras */
-            left: 5px;            /* Centralizado entre a barra 1 e 2 */
+            top: -24px;           /* Faz ele flutuar no meio, acima da barra 1 e 2 */
+            left: -2px;           /* Centraliza ele perfeitamente no vão gráfico */
             z-index: 5;
             line-height: 1;
         }
@@ -242,22 +236,19 @@
 </head>
 <body>
 
-    <!-- Header com a Logo Corrigida e Fiel ao Conceito Original -->
+    <!-- Header com a Logo idêntica à assinatura original da marca -->
     <div class="brand-header">
         <div class="brand-logo-container">
-            <!-- Letra M (Lado Esquerdo) -->
-            <span class="logo-m-left">M</span>
+            <!-- Letra M única dividida em duas cores pelo CSS (Branco e Dourado) -->
+            <span class="logo-m">M</span>
             
-            <!-- Perna Direita do M (A primeira barra dourada alta) -->
-            <div class="logo-m-right-bar"></div>
-            
-            <!-- Grupo das 3 Barrinhas do Gráfico + Cifrão Centralizado -->
+            <!-- As 3 Barrinhas Reais do Gráfico -->
             <div class="logo-graph-bars">
                 <div class="bar-1"></div>
                 <div class="bar-2"></div>
                 <div class="bar-3"></div>
                 
-                <!-- O Cifrão agora fica exatamente aqui: no meio delas! -->
+                <!-- Cifrão centralizado flutuando exatamente sobre o meio do gráfico -->
                 <span class="logo-sifrao">$</span>
             </div>
         </div>
