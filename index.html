@@ -1,0 +1,277 @@
+Primeiro
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxsuel Ribeiro | Portfólio Executivo</title>
+    <!-- Importando ícones modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            /* Cores Exatas da Sua Identidade Visual (Copilot_20260522_104131.png) */
+            --bg-main: #0a111e;        /* Azul Marinho Fundo Profundo */
+            --bg-card: #131c2e;        /* Azul Marinho dos Cards */
+            --text-white: #f8fafc;     /* Branco Suave */
+            --text-gold: #d4af37;      /* Dourado Oficial da Marca */
+            --gold-gradient: linear-gradient(135deg, #f3e7c4 0%, #d4af37 50%, #aa7c11 100%);
+            --btn-bg: #1e293b;         /* Fundo dos botões */
+            --btn-hover: #1e3a8a;      /* Hover com tom azul de destaque */
+            --border-color: #24334d;   /* Linhas divisórias sutis */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+            color: var(--text-white);
+            background-color: var(--bg-main);
+        }
+
+        /* Cabeçalho Impactante Baseado na sua Logo Oficial */
+        .brand-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 1rem;
+        }
+
+        /* Representação Digital Vetorial do Ícone M$ da imagem Copilot_20260522_104131.png */
+        .brand-logo-simulation {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-family: "Georgia", serif;
+            font-weight: bold;
+            font-size: 4rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .brand-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--text-white);
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .brand-subtitle {
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 6px;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            margin-top: 0.2rem;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0.4rem 0;
+            display: inline-block;
+        }
+
+        .professional-title {
+            font-size: 1.1rem;
+            color: var(--text-white);
+            opacity: 0.9;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Box de Perfil / Bio */
+        .bio-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 3rem;
+            font-size: 1.05rem;
+        }
+
+        .bio-card strong {
+            color: #fff;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 { 
+            font-size: 1.35rem;
+            color: var(--text-white); 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 0.5em; 
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 i {
+            color: #d4af37;
+        }
+
+        /* Grid Inteligente de Botões Modernos */
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-tech {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+            background-color: var(--bg-card);
+            color: var(--text-white);
+            text-decoration: none;
+            padding: 1.1rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-tech:hover {
+            background-color: var(--btn-hover);
+            border-color: #d4af37;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+        }
+
+        .btn-tech i {
+            font-size: 1.3rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Badges de Competência Dinâmicos */
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        .tag {
+            background: rgba(20, 30, 51, 0.6);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: var(--text-white);
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .tag:hover {
+            border-color: #d4af37;
+            background: var(--bg-card);
+        }
+
+        .tag-group-title {
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            color: #64748b;
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header com Releitura Fiel da Sua Marca -->
+    <div class="brand-header">
+        <div class="brand-logo-simulation">M$</div>
+        <h1 class="brand-title">MAXSUEL</h1>
+        <div class="brand-subtitle">CONTABILIDADE</div>
+        <div class="professional-title">Maxsuel Ribeiro | Contador &amp; Analista de Dados Fiscais</div>
+    </div>
+    
+    <div class="bio-card">
+        Transformando dados contábeis em decisões estratégicas e eficiência tributária na agroindústria. 
+        Atualmente, exerço o cargo de <strong>Assistente Contábil e Fiscal na Usina Caeté</strong>, lidando com a complexidade do Lucro Real e grandes operações fiscais. Especialista tributário (em formação), unindo Contabilidade Digital e Business Intelligence.
+    </div>
+
+    <h2><i class="fa-solid fa-id-card"></i> Redes Sociais e Contato</h2>
+    <div class="btn-grid">
+        <a href="https://www.linkedin.com/in/maxsuel-ribeiro-b859b8221" target="_blank" class="btn-tech">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn Profissional
+        </a>
+        <a href="https://www.instagram.com/contabilidadex?igsh=c3BnNjNmZTE2dm91" target="_blank" class="btn-tech">
+            <i class="fa-brands fa-instagram"></i> Instagram Corporativo
+        </a>
+        <a href="mailto:Contabilidademaxsuel@gmail.com" class="btn-tech">
+            <i class="fa-solid fa-envelope"></i> E-mail Profissional
+        </a>
+        <a href="https://wa.me/qr/ZBWL5X7A25MQI1" target="_blank" class="btn-tech">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Direto
+        </a>
+    </div>
+
+    <h2><i class="fa-solid fa-chart-line"></i> Trabalhos e Portfólio</h2>
+    <div class="btn-grid">
+        <a href="LINK_DA_PLANILHA" target="_blank" class="btn-tech">
+            <i class="fa-solid fa-table"></i> Projetos &amp; Planilhas Inteligentes
+        </a>
+        <a href="LINK_DO_DASHBOARD" target="_blank" class="btn-tech">
+            <i class="fa-solid fa-chart-pie"></i> Dashboards Interativos (Power BI)
+        </a>
+    </div>
+
+    <h2><i class="fa-solid fa-layer-group"></i> Especialidades &amp; Tech Stack</h2>
+    
+    <div class="tag-group-title">Áreas de Atuação &amp; Softwares</div>
+    <ul class="tech-tags">
+        <li class="tag">Contabilidade Consultiva</li>
+        <li class="tag">Gestão Financeira</li>
+        <li class="tag">Planejamento Tributário</li>
+        <li class="tag">BPO Financeiro</li>
+        <li class="tag">Excel Avançado (Power Query)</li>
+        <li class="tag">Power BI (Dashboards Fiscais)</li>
+        <li class="tag">ERPs de Grande Porte</li>
+        <li class="tag">Notion</li>
+    </ul>
+
+    <div class="tag-group-title">Competências de Grande Porte</div>
+    <ul class="tech-tags">
+        <li class="tag">Lucro Real (Não Cumulativo / Cumulativo)</li>
+        <li class="tag">Lucro Presumido</li>
+        <li class="tag">Simples Nacional</li>
+        <li class="tag">Agroindústria</li>
+        <li class="tag">Setor Sucroenergético</li>
+        <li class="tag">Indústria de Grande Porte</li>
+    </ul>
+
+    <footer>
+        <p>© 2026 Maxsuel Contabilidade. Inteligência de Dados a Serviço da Conformidade Fiscal.</p>
+    </footer>
+
+</body>
+</html>
