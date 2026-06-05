@@ -28,13 +28,13 @@ Abaixo estão os links para alguns dos meus principais projetos, planilhas intel
 
 ---
 
-## 🛠️ Especialidades & Ferramentas
+## 📈 Especialidades & Ferramentas
 
 *   **Áreas de Atuação:** Contabilidade Consultiva, Gestão Financeira, Planejamento Tributário, BPO Financeiro.
 *   **Softwares & Ferramentas:** Excel Avançado, Power BI, Sistemas Contábeis, Notion.
 
-### 🛠️ Competências de Grande Porte:
-* **Regimes Tributários:** Lucro Real (Não Cumulativo - PIS/COFINS).
+## 📊 Competências de Grande Porte:
+* **Regimes Tributários:** Lucro Real (Não Cumulativo / Cumulativo) / Presumido / Simples.
 * **Setor de Atuação:** Agroindústria / Setor Sucroenergético / Indústria de Grande Porte.
 * **Tech Stack Contábil:** Excel Avançado (Power Query), Power BI (Dashboards Fiscais), ERPs de Grande Porte.
 
