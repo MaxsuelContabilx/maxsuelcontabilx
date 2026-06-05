@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxsuel Ribeiro | Portfólio Executivo</title>
-    <!-- Importando ícones modernos -->
+    <title>Maxsuel Ribeiro | Contabilidade</title>
+    <!-- Font Awesome para os ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
+    
+    <style>
         :root {
             --bg-main: #0a111e;        /* Azul Marinho Fundo Profundo */
             --bg-card: #131c2e;        /* Azul Marinho dos Cards */
             --text-white: #f8fafc;     /* Branco Suave */
             --text-gold: #c3a67d;      /* O dourado fosco elegante da sua logo */
-            --brand-navy: #11222f;     /* O azul-marinho escuro da logo */
+            --border-color: #24334d;   
             --btn-bg: #1e293b;         
             --btn-hover: #1e3a8a;      
-            --border-color: #24334d;   
         }
 
         body {
@@ -28,94 +28,80 @@
             background-color: var(--bg-main);
         }
 
-        /* CONFIGURAÇÃO DA LOGO IDÊNTICA AO ORIGINAL */
+        /* CONTAINER DA HEADER */
         .brand-header {
             text-align: center;
             margin-bottom: 3rem;
             padding: 2rem 1rem;
         }
 
+        /* CONSTRUÇÃO EXATA DA LOGO EM CSS (M + GRÁFICO + CIFRÃO) */
         .brand-logo-container {
             display: inline-flex;
-            align-items: flex-start;
+            align-items: flex-end; /* Garante que a base da logo fique reta */
             justify-content: center;
-            font-family: "Arial Black", "Impact", sans-serif; /* Fonte mais robusta para o M */
-            line-height: 0.85<style>
-        :root {
-            --bg-main: #0a111e;        /* Azul Marinho Fundo Profundo */
-            --bg-card: #131c2e;        /* Azul Marinho dos Cards */
-            --text-white: #f8fafc;     /* Branco Suave */
-            --text-gold: #c3a67d;      /* O dourado fosco elegante da sua logo */
-            --brand-navy: #11222f;     /* O azul-marinho escuro da logo */
-            --btn-bg: #1e293b;         
-            --btn-hover: #1e3a8a;      
-            --border-color: #24334d;   
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 750px;
-            margin: 0 auto;
-            padding: 2.5rem 1.5rem;
-            color: var(--text-white);
-            background-color: var(--bg-main);
-        }
-
-        /* CONFIGURAÇÃO DA LOGO EM DESTAQUE MÁXIMO */
-        .brand-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding: 2rem 1rem;
-        }
-
-        .brand-logo-container {
-            display: inline-flex;
-            align-items: flex-end; /* Alinha tudo por baixo como um gráfico de verdade */
-            justify-content: center;
-            font-family: "Arial Black", "Impact", sans-serif;
-            line-height: 1;
-            margin-bottom: 1rem;
+            height: 90px;          /* Altura controlada para o topo */
+            margin-bottom: 1.5rem;
             position: relative;
         }
 
-        /* Letra M em evidência clara no tema escuro */
+        /* A perna esquerda robusta do M (Em branco para destacar no fundo escuro) */
         .logo-m-left {
-            font-size: 5rem;
-            color: #e2e8f0; /* Cinza claro/branco para dar alto contraste no fundo */
+            font-family: "Arial Black", "Impact", sans-serif;
+            font-size: 5.8rem;
+            color: #ffffff;
+            line-height: 0.78;
+            letter-spacing: -2px;
         }
 
-        /* O GRÁFICO: Agora visível, robusto e em barras crescentes */
-        .logo-m-right {
-            font-size: 3.5rem; /* Proporcional para parecer a barra do meio */
-            color: var(--text-gold);
-            margin-left: -2px; 
+        /* O GRÁFICO DE BARRAS DE VERDADE (Substituindo o caractere que ficou zuado) */
+        .logo-graph-bars {
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 3px;             /* Espaçamento fino entre as barras */
+            height: 72px;         /* Alinhado com a altura do M */
+            margin-left: -4px;    /* Conecta perfeitamente com a perna do M */
             margin-right: 4px;
-            font-family: monospace;
         }
 
-        /* Letra do Cifrão menor e deslocada para o topo */
+        /* Cada barra do gráfico desenhada perfeitamente */
+        .bar-1 {
+            width: 14px;
+            height: 100%;         /* Barra mais alta, que completa o M */
+            background-color: var(--text-gold);
+        }
+
+        .bar-2 {
+            width: 11px;
+            height: 40%;          /* Barra menor do gráfico */
+            background-color: var(--text-gold);
+        }
+
+        .bar-3 {
+            width: 11px;
+            height: 60%;          /* Barra média do gráfico */
+            background-color: var(--text-gold);
+        }
+
+        .bar-4 {
+            width: 11px;
+            height: 85%;          /* Barra que fica abaixo do cifrão */
+            background-color: var(--text-gold);
+        }
+
+        /* O Cifrão flutuando perfeitamente no topo direito */
         .logo-sifrao {
-            font-size: 2.5rem; 
-            color: #e2e8f0;    /* Mesma cor clara de destaque do M */
-            font-family: -apple-system, sans-serif;
+            font-size: 2.5rem;
+            color: #ffffff;       /* Branco em evidência */
+            font-family: "Segoe UI", -apple-system, sans-serif;
             font-weight: bold;
-            align-self: flex-start; /* Joga o cifrão para o topo */
-            margin-top: -0.5rem;
-            margin-left: 2px;
+            align-self: flex-start;
+            margin-top: -8px;
+            margin-left: -22px;   /* Posiciona em cima da última barra, igual na logo */
+            z-index: 2;
         }
 
-        .brand-title {
-            font-size: 2.8rem;
-            font-weight: 900;
-            letter-spacing: 1px;
-            color: #12222e; 
-            margin: 0;
-            text-transform: uppercase;
-            background: none;
-            -webkit-text-fill-color: initial;
-        }
-
+        /* TEXTOS DO HEADER */
         .brand-title-dark-mode {
             font-size: 2.8rem;
             font-weight: 800;
@@ -146,7 +132,7 @@
             font-weight: 500;
         }
 
-        /* O restante dos estilos permanecem iguais... */
+        /* CONTEÚDO DA PÁGINA (BIO, BOTÕES E TAGS) */
         .bio-card {
             background: var(--bg-card);
             padding: 2rem;
@@ -154,88 +140,193 @@
             border: 1px solid var(--border-color);
             margin-bottom: 3rem;
         }
-        .bio-card strong { color: var(--text-gold); }
-        h2 { font-size: 1.35rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5em; margin-top: 3rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; text-transform: uppercase; letter-spacing: 1px;}
-        h2 i { color: var(--text-gold); }
-        .btn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
-        .btn-tech { display: flex; align-items: center; justify-content: flex-start; gap: 1rem; background-color: var(--bg-card); color: var(--text-white); text-decoration: none; padding: 1.1rem 1.5rem; border-radius: 10px; font-weight: 600; transition: all 0.3s ease; border: 1px solid var(--border-color); }
-        .btn-tech:hover { background-color: var(--btn-hover); border-color: var(--text-gold); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(195, 166, 125, 0.15); }
-        .btn-tech i { font-size: 1.3rem; color: var(--text-gold); }
-        .tech-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 0; list-style: none; }
-        .tag { background: rgba(20, 30, 51, 0.6); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.9rem; color: var(--text-white); font-weight: 500; }
-        .tag-group-title { font-size: 1rem; color: #94a3b8; margin-top: 1.5rem; margin-bottom: 0.75rem; font-weight: 700; text-transform: uppercase; }
-        footer { text-align: center; margin-top: 5rem; color: #64748b; font-size: 0.85rem; border-top: 1px solid var(--border-color); padding-top: 2rem; }
+        
+        .bio-card strong { 
+            color: var(--text-gold); 
+        }
+
+        h2 { 
+            font-size: 1.35rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 0.5em; 
+            margin-top: 3rem; 
+            margin-bottom: 1.5rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 0.75rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+        
+        h2 i { 
+            color: var(--text-gold); 
+        }
+
+        .btn-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+            gap: 1.25rem; 
+            margin-bottom: 2.5rem; 
+        }
+
+        .btn-tech { 
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-start; 
+            gap: 1rem; 
+            background-color: var(--bg-card); 
+            color: var(--text-white); 
+            text-decoration: none; 
+            padding: 1.1rem 1.5rem; 
+            border-radius: 10px; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+            border: 1px solid var(--border-color); 
+        }
+
+        .btn-tech:hover { 
+            background-color: var(--btn-hover); 
+            border-color: var(--text-gold); 
+            transform: translateY(-3px); 
+            box-shadow: 0 8px 20px rgba(195, 166, 125, 0.15); 
+        }
+
+        .btn-tech i { 
+            font-size: 1.3rem; 
+            color: var(--text-gold); 
+        }
+
+        /* Ajustando a cor dos links dentro dos botões que estavam roxos no seu print */
+        .btn-tech span {
+            color: var(--text-white);
+        }
+
+        .tech-tags { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 0.6rem; 
+            padding: 0; 
+            list-style: none; 
+        }
+
+        .tag { 
+            background: rgba(20, 30, 51, 0.6); 
+            border: 1px solid var(--border-color); 
+            padding: 0.5rem 1rem; 
+            border-radius: 30px; 
+            font-size: 0.9rem; 
+            color: var(--text-white); 
+            font-weight: 500; 
+        }
+
+        .tag-group-title { 
+            font-size: 1rem; 
+            color: #94a3b8; 
+            margin-top: 1.5rem; 
+            margin-bottom: 0.75rem; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+        }
+
+        footer { 
+            text-align: center; 
+            margin-top: 5rem; 
+            color: #64748b; 
+            font-size: 0.85rem; 
+            border-top: 1px solid var(--border-color); 
+            padding-top: 2rem; 
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header Corrigido Proporcional à Logo Real -->
+    <!-- Header com a Logo Recriada Perfeitamente em Alta Evidência -->
     <div class="brand-header">
         <div class="brand-logo-container">
-            <span class="logo-m-left">M</span><span class="logo-m-right">█</span><span class="logo-sifrao">$</span>
+            <!-- Metade Esquerda do M -->
+            <span class="logo-m-left">M</span>
+            
+            <!-- As 4 colunas do Gráfico Crescente (A primeira fecha o desenho do M) -->
+            <div class="logo-graph-bars">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+                <div class="bar-4"></div>
+            </div>
+            
+            <!-- Cifrão Flutuante -->
+            <span class="logo-sifrao">$</span>
         </div>
+        
         <h1 class="brand-title-dark-mode">MAXSUEL</h1>
         <div class="brand-subtitle">CONTABILIDADE</div>
         <div class="professional-title">Maxsuel Ribeiro | Contador &amp; Analista de Dados Fiscais</div>
     </div>
-    
+
+    <!-- Seção de Biografia -->
     <div class="bio-card">
         Transformando dados contábeis em decisões estratégicas e eficiência tributária na agroindústria. 
-        Atualmente, exerço o cargo de <strong>Assistente Contábil e Fiscal na Usina Caeté</strong>, lidando com a complexidade do Lucro Real e grandes operações fiscais. Especialista tributário (em formação), unindo Contabilidade Digital e Business Intelligence.
+        Atualmente, exerço o cargo de <strong>Assistente Contábil e Fiscal na Usina Caeté</strong>, lidando com a 
+        complexidade do Lucro Real e grandes operações fiscais. Especialista tributário (em formação), unindo 
+        Contabilidade Digital e Business Intelligence.
     </div>
 
-    <h2><i class="fa-solid fa-id-card"></i> Redes Sociais e Contato</h2>
+    <!-- Redes Sociais e Contato -->
+    <h2><i class="fa-solid fa-address-book"></i> Redes Sociais e Contato</h2>
     <div class="btn-grid">
-        <a href="https://www.linkedin.com/in/maxsuel-ribeiro-b859b8221" target="_blank" class="btn-tech">
-            <i class="fa-brands fa-linkedin"></i> LinkedIn Profissional
+        <a href="#" class="btn-tech">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn Profissional</span>
         </a>
-        <a href="https://www.instagram.com/contabilidadex?igsh=c3BnNjNmZTE2dm91" target="_blank" class="btn-tech">
-            <i class="fa-brands fa-instagram"></i> Instagram Corporativo
+        <a href="#" class="btn-tech">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram Corporativo</span>
         </a>
-        <a href="mailto:Contabilidademaxsuel@gmail.com" class="btn-tech">
-            <i class="fa-solid fa-envelope"></i> E-mail Profissional
+        <a href="#" class="btn-tech">
+            <i class="fa-solid fa-envelope"></i>
+            <span>E-mail Profissional</span>
         </a>
-        <a href="https://wa.me/qr/ZBWL5X7A25MQI1" target="_blank" class="btn-tech">
-            <i class="fa-brands fa-whatsapp"></i> WhatsApp Direto
+        <a href="#" class="btn-tech">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp Direto</span>
         </a>
     </div>
 
-    <h2><i class="fa-solid fa-chart-line"></i> Trabalhos e Portfólio</h2>
+    <!-- Trabalhos e Portfólio -->
+    <h2><i class="fa-solid fa-briefcase"></i> Trabalhos e Portfólio</h2>
     <div class="btn-grid">
-        <a href="LINK_DA_PLANILHA" target="_blank" class="btn-tech">
-            <i class="fa-solid fa-table"></i> Projetos &amp; Planilhas Inteligentes
+        <a href="#" class="btn-tech">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Painéis no Power BI</span>
         </a>
-        <a href="LINK_DO_DASHBOARD" target="_blank" class="btn-tech">
-            <i class="fa-solid fa-chart-pie"></i> Dashboards Interativos (Power BI)
+        <a href="#" class="btn-tech">
+            <i class="fa-solid fa-folder-open"></i>
+            <span>Casos Práticos de Sucesso</span>
         </a>
     </div>
 
-    <h2><i class="fa-solid fa-layer-group"></i> Especialidades &amp; Tech Stack</h2>
+    <!-- Especialidades Técnicas -->
+    <h2><i class="fa-solid fa-gears"></i> Especialidades Técnicas</h2>
     
-    <div class="tag-group-title">Áreas de Atuação &amp; Softwares</div>
+    <div class="tag-group-title">Core Contábil &amp; Fiscal</div>
     <ul class="tech-tags">
-        <li class="tag">Contabilidade Consultiva</li>
-        <li class="tag">Gestão Financeira</li>
+        <li class="tag">Lucro Real</li>
         <li class="tag">Planejamento Tributário</li>
-        <li class="tag">BPO Financeiro</li>
-        <li class="tag">Excel Avançado (Power Query)</li>
-        <li class="tag">Power BI (Dashboards Fiscais)</li>
-        <li class="tag">ERPs de Grande Porte</li>
-        <li class="tag">Notion</li>
+        <li class="tag">Agroindústria</li>
+        <li class="tag">SPED (Fiscal &amp; Contribuições)</li>
+        <li class="tag">Conformidade Fiscal</li>
     </ul>
 
-    <div class="tag-group-title">Competências de Grande Porte</div>
+    <div class="tag-group-title">Tecnologia &amp; Analytics</div>
     <ul class="tech-tags">
-        <li class="tag">Lucro Real (Não Cumulativo / Cumulativo)</li>
-        <li class="tag">Lucro Presumido</li>
-        <li class="tag">Simples Nacional</li>
-        <li class="tag">Agroindústria</li>
-        <li class="tag">Setor Sucroenergético</li>
-        <li class="tag">Indústria de Grande Porte</li>
+        <li class="tag">Business Intelligence</li>
+        <li class="tag">Power BI</li>
+        <li class="tag">Análise de Dados Fiscais</li>
+        <li class="tag">Contabilidade Digital</li>
     </ul>
 
     <footer>
-        <p>© 2026 Maxsuel Contabilidade. Inteligência de Dados a Serviço da Conformidade Fiscal.</p>
+        &copy; 2026 Maxsuel Ribeiro. Todos os direitos reservados.
     </footer>
 
 </body>
