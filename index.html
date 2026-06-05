@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
         :root {
-            --bg-main: #0a111e;        /* Fundo escuro */
-            --bg-card: #131c2e;        
-            --text-white: #f8fafc;     
-            --text-gold: #c3a67d;      /* O dourado elegante da logo */
+            --bg-main: #0a111e;        /* Azul Marinho Fundo Profundo */
+            --bg-card: #131c2e;        /* Azul Marinho dos Cards */
+            --text-white: #f8fafc;     /* Branco Suave */
+            --text-gold: #c3a67d;      /* O dourado fosco elegante da sua logo */
+            --brand-navy: #11222f;     /* O azul-marinho escuro da logo */
+            --btn-bg: #1e293b;         
+            --btn-hover: #1e3a8a;      
             --border-color: #24334d;   
         }
 
@@ -25,7 +28,7 @@
             background-color: var(--bg-main);
         }
 
-        /* CONTAINER DA LOGO EM EVIDÊNCIA */
+        /* CONFIGURAÇÃO DA LOGO IDÊNTICA AO ORIGINAL */
         .brand-header {
             text-align: center;
             margin-bottom: 3rem;
@@ -34,48 +37,50 @@
 
         .brand-logo-container {
             display: inline-flex;
-            align-items: flex-end; /* Alinha por baixo para simular o gráfico de barras */
+            align-items: flex-start;
             justify-content: center;
-            line-height: 0.9;
-            margin-bottom: 1.5rem;
+            font-family: "Arial Black", "Impact", sans-serif; /* Fonte mais robusta para o M */
+            line-height: 0.85;
+            margin-bottom: 1rem;
             position: relative;
-            padding: 10px;
         }
 
-        /* O "M" principal agora em Branco para dar o contraste perfeito no fundo escuro */
         .logo-m-left {
-            font-family: "Arial Black", "Impact", sans-serif;
-            font-size: 5.5rem;
-            color: #ffffff; 
-            font-weight: 900;
-            letter-spacing: -2px;
+            font-size: 5rem;
+            color: #12222e; /* O tom escuro exato da logo original */
         }
 
-        /* A perna direita simulando a barra de crescimento em dourado */
         .logo-m-right {
-            font-family: "Arial Black", "Impact", sans-serif;
-            font-size: 5.5rem;
+            font-size: 5rem;
             color: var(--text-gold);
-            margin-left: -8px;
-            margin-right: 5px;
+            margin-left: -5px; /* Une as duas partes do M */
         }
 
-        /* O Cifrão em dourado brilhante e flutuando no topo com sombra de evidência */
         .logo-sifrao {
-            font-size: 2.8rem; 
-            color: #ffffff;    /* Branco para destacar totalmente */
-            font-family: "Segoe UI", sans-serif;
+            font-size: 2.5rem; /* Metade do tamanho, igual na logo */
+            color: #12222e;    /* Mesma cor escura do início do M */
+            font-family: -apple-system, sans-serif;
             font-weight: bold;
-            align-self: flex-start; /* Força ele a ir para o topo */
-            margin-top: -0.5rem;
-            margin-left: -2px;
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Efeito luminoso sutil */
+            margin-top: -0.4rem; /* Faz ele flutuar no topo */
+            margin-left: 2px;
         }
 
-        .brand-title-dark-mode {
+        .brand-title {
             font-size: 2.8rem;
             font-weight: 900;
-            letter-spacing: 3px;
+            letter-spacing: 1px;
+            color: #12222e; /* Mantendo o padrão escuro da assinatura */
+            margin: 0;
+            text-transform: uppercase;
+            background: none;
+            -webkit-text-fill-color: initial;
+        }
+
+        /* Se preferir que o nome MAXSUEL continue branco para destacar no fundo escuro: */
+        .brand-title-dark-mode {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 2px;
             color: var(--text-white);
             margin: 0;
             text-transform: uppercase;
@@ -87,7 +92,7 @@
             letter-spacing: 8px;
             color: var(--text-gold);
             text-transform: uppercase;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
             border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
             padding: 0.4rem 0;
@@ -97,15 +102,35 @@
         .professional-title {
             font-size: 1.1rem;
             color: var(--text-white);
-            opacity: 0.85;
+            opacity: 0.8;
             margin-top: 1.5rem;
             font-weight: 500;
         }
+
+        /* O restante dos estilos permanecem iguais... */
+        .bio-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        .bio-card strong { color: var(--text-gold); }
+        h2 { font-size: 1.35rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5em; margin-top: 3rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; text-transform: uppercase; letter-spacing: 1px;}
+        h2 i { color: var(--text-gold); }
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
+        .btn-tech { display: flex; align-items: center; justify-content: flex-start; gap: 1rem; background-color: var(--bg-card); color: var(--text-white); text-decoration: none; padding: 1.1rem 1.5rem; border-radius: 10px; font-weight: 600; transition: all 0.3s ease; border: 1px solid var(--border-color); }
+        .btn-tech:hover { background-color: var(--btn-hover); border-color: var(--text-gold); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(195, 166, 125, 0.15); }
+        .btn-tech i { font-size: 1.3rem; color: var(--text-gold); }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 0; list-style: none; }
+        .tag { background: rgba(20, 30, 51, 0.6); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.9rem; color: var(--text-white); font-weight: 500; }
+        .tag-group-title { font-size: 1rem; color: #94a3b8; margin-top: 1.5rem; margin-bottom: 0.75rem; font-weight: 700; text-transform: uppercase; }
+        footer { text-align: center; margin-top: 5rem; color: #64748b; font-size: 0.85rem; border-top: 1px solid var(--border-color); padding-top: 2rem; }
     </style>
 </head>
 <body>
 
-    <!-- Header Ajustado com Contraste e Evidência Máxima -->
+    <!-- Header Corrigido Proporcional à Logo Real -->
     <div class="brand-header">
         <div class="brand-logo-container">
             <span class="logo-m-left">M</span><span class="logo-m-right">ı</span><span class="logo-sifrao">$</span>
@@ -114,6 +139,8 @@
         <div class="brand-subtitle">CONTABILIDADE</div>
         <div class="professional-title">Maxsuel Ribeiro | Contador &amp; Analista de Dados Fiscais</div>
     </div>
+
+    <!-- O resto do código (sua bio, botões e especialidades) continua exatamente aqui abaixo... -->
     
     <div class="bio-card">
         Transformando dados contábeis em decisões estratégicas e eficiência tributária na agroindústria. 
